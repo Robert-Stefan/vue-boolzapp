@@ -154,3 +154,35 @@ body {
 .side .search-bar input[type=text]::placeholder {
     font-size: 13px;
 }
+
+/*LIST CHAT*/
+.side .list-chat {
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.side .list-chat hr {
+    width: 104%;
+    transform: translateX(-10px);
+    margin-top: 10px;
+}
+
+.side .list-chat img {
+    width: 68px;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 68px;
+    margin-top: 7px;
+}
+
+.side .list-chat span {
+    font-weight: bold;
+    padding: 31px 30px;
+    font-size: 17px;
+}
+
+.side .list-chat li {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}

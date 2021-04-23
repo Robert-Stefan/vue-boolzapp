@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WhatsApp Web</title>
     <!--CSS-->
     <link rel="stylesheet" href="main.css">
     <!--JS-->
@@ -19,6 +19,7 @@
     
     <div id="app" class="container">
         <aside class="side">
+
             <!--HEADER USER-->
             <div class="header-user">
                 <img src="img/avatar_io.jpg" alt="avatar">
@@ -27,6 +28,7 @@
                 <i class="fas fa-comment-alt"></i>
                 <i class="fas fa-circle-notch"></i>
             </div>
+
             <!--NOTIFICATION BAR-->
             <div class="notification-bar">
                 <div class="notify">
@@ -37,12 +39,23 @@
                     <span><a style="color: #303030d9;" href="#">Attiva notifiche desktop</a></span>
                 </div>
             </div>
+
             <!--SEARCH INPUT-->
             <div class="search-bar">
                 <button type="submit"><i class="fa fa-search"></i></button>
                 <input type="text" placeholder="Cerca o inizia una nuova chat">
             </div>
+            
             <!--LIST CHAT-->
+            <div class="list-chat">
+                <ul>
+                    <li v-for="element in yourPropNameHere">
+                        <img :src="'./img/avatar'+element.avatar+'.jpg'" alt="avatar_user">
+                        <span>{{ element.name }}</span>
+                        <hr style=" border: 1px solid #f6f6f6;">
+                    </li>
+                </ul>
+            </div>
         </aside>
             
         <main class="content">
