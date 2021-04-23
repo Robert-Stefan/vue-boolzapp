@@ -2,10 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 body {
-    font-family: 'Lato';
     height: 100vh;
     background-image: linear-gradient(
         to bottom, 
@@ -53,4 +53,31 @@ body {
 
 .content-main p {
     margin-bottom: 20px;
+}
+
+/*HEADER USER*/
+.header-user {
+    padding: 10px 10px;
+    background: #ededed;
+}
+
+.side .header-user > img {
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.side .header-user > span {
+    position: absolute;
+    top: 40px;
+    font-weight: bold;
+    padding: 7px 5px;
+}
+
+.side .header-user > i {
+    float: right;
+    padding: 13px;
+    font-size: 23px;
+    color: #808080;
+    cursor: pointer;
 }
