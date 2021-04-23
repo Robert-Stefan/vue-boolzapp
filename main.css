@@ -82,6 +82,7 @@ body {
     cursor: pointer;
 }
 
+/* NOTIFICATION BAR*/
 .side .notification-bar {
     background: #9de1fe;
 }
@@ -119,3 +120,5 @@ body {
     line-height: 2;
     font-size: 13px;
 }
+
+/*SEARCH INPUT*/
