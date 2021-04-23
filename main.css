@@ -81,3 +81,41 @@ body {
     color: #808080;
     cursor: pointer;
 }
+
+.side .notification-bar {
+    background: #9de1fe;
+}
+
+.side .notification-bar .notify {
+    display: inline-block;
+    background-color: #fff;
+    margin-top: 15px;
+    margin-left: 15px;
+    border-radius: 50%;
+    cursor: pointer;   
+}
+
+.notify i {
+    padding: 12px 10px;
+    font-size: 20px;
+    color: #9de1fe;
+}
+
+.activenotify {
+    padding-top: 10px;
+    padding-left: 10px;
+    display: inline-block;
+    margin-bottom: 25px;
+    transform: translateY(10px);
+}
+
+.activenotify span:first-child {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.activenotify span:last-child {
+    display: block;
+    line-height: 2;
+    font-size: 13px;
+}
