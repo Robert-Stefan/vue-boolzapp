@@ -122,3 +122,35 @@ body {
 }
 
 /*SEARCH INPUT*/
+.side .search-bar {
+    background-color: #f6f6f6;
+    height: 50px;
+    padding-top: 2px;
+}
+
+.side .search-bar button {
+    float: left;
+    padding: 6px 10px;
+    background: #fff;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-top: 6px;
+    width: 13%;
+    color: #808080;
+    margin-right: 1px;
+}
+
+.side .search-bar input[type=text] {
+    padding: 6px;
+    margin-top: 6px;
+    font-size: 17px;
+    width: 85%;
+    border: none;
+    outline: none;
+}
+
+.side .search-bar input[type=text]::placeholder {
+    font-size: 13px;
+}
