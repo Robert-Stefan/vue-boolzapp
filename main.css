@@ -34,7 +34,8 @@ body {
 
 .content {
     flex-basis: 65%;
-    background: #aaa;
+    background-image: url(./img/mine.jpg);
+    background-repeat: repeat;
     display: flex;
     flex-direction: column;
     border-left: 1px solid #dadada;
@@ -43,12 +44,15 @@ body {
 .content-header,
 .content-footer {
     padding: 20px;
-    background: rgba(255,0,0, .5);
+    background: rgba(255,0,0, .5); /*da togliere*/
 }
 
 .content-main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     flex-grow: 1;
-    padding: 20px;
+    padding: 0 100px;
     overflow-y: auto;
 }
 
@@ -223,4 +227,56 @@ body {
     font-size: 23px;
     color: #808080;
     cursor: pointer;
+}
+
+/*MAIN OF CONTENT*/
+/*SEND MESSAGE*/
+
+.content-main .send {
+    background-color: #ddfabf;
+    align-self: flex-end;
+    position: relative;
+    margin-top: 50px;
+    padding: 15px 150px 20px 10px;
+    border-radius: 10px;
+    max-width: 60%;
+    min-width: 20%;
+}
+
+.content-main .send span:first-child {
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.content-main .send span:last-child {
+    position: absolute;
+    font-size: 10px;
+    bottom: 5px;
+    right: 10px;
+    color: #808080;
+}
+
+/*RECEIVE MESSAGE*/
+.content-main .receive {
+    background-color: #fff;
+    align-self: flex-start;
+    position: relative;
+    margin: 15px;
+    padding: 13px 140px 20px 10px;
+    border-radius: 5px;
+    max-width: 60%;
+    min-width: 20%;
+}
+
+.content-main .receive span:first-child {
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.content-main .receive span:last-child {
+    position: absolute;
+    font-size: 10px;
+    bottom: 5px;
+    right: 10px;
+    color: #808080;
 }
