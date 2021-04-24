@@ -2,7 +2,7 @@
 const app = new Vue({
     el:'#app',
     data: {
-yourPropNameHere: [
+listechat: [
     {
         name: 'Michele',
         avatar: '_1',

@@ -49,15 +49,14 @@
             <!--LIST CHAT WITH VUEJS-->
             <div class="list-chat">
                 <ul>
-                    <li v-for="element in yourPropNameHere">
-                        <img :src="'./img/avatar'+element.avatar+'.jpg'" alt="avatar_user">
-                        <span>{{ element.name }}</span>
+                    <li v-for="utenti in listechat">
+                        <img :src="'./img/avatar'+utenti.avatar+'.jpg'" alt="avatar_user">
+                        <span>{{ utenti.name }}</span>
                         <hr style=" border: 1px solid #f6f6f6;">
                     </li>
                 </ul>
             </div>
         </aside>
-            
         <main class="content">
 
             <!--HEADER CONTENT-->
@@ -88,10 +87,11 @@
 
             <!--FOOTER CONTENT-->
             <section class="content-footer">
-
+                <i class="far fa-smile"></i>
+                <input class="chat" type="text" placeholder="Scrivi un messaggio">
+                <i class="fas fa-microphone"></i>
             </section>
-        </main>
-        
+        </main>    
     </div>
 
     <!--JS-->
