@@ -37,6 +37,7 @@ body {
     background: #aaa;
     display: flex;
     flex-direction: column;
+    border-left: 1px solid #dadada;
 }
 
 .content-header,
@@ -185,4 +186,41 @@ body {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+}
+
+/*HEADER OF CONTENT*/
+.content-header {
+    padding: 10px 10px;
+    background: #ededed;
+}
+
+.content .content-header > img {
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.content-header .username {
+    position: absolute;
+    top: 35px;
+    font-weight: bold;
+    padding: 7px 5px;
+    cursor: pointer;
+}
+
+.content-header .lastentry {
+    position: absolute;
+    top: 54px;
+    padding: 7px 5px;
+    font-size: 13px;
+    color: #808080;
+    font-weight: bold;
+}
+
+.content .content-header > i {
+    float: right;
+    padding: 13px;
+    font-size: 23px;
+    color: #808080;
+    cursor: pointer;
 }
