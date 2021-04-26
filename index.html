@@ -61,7 +61,7 @@
 
             <!--HEADER CONTENT-->
             <section class="content-header">
-                <img :src="./img/avatar_1.jpg" alt="user">
+                <img src="./img/avatar_1.jpg" alt="user">
                 <span class="username">Michele</span>
                 <span class="lastentry">Ultimo accesso oggi alle 10.35</span>
                 <i class="fas fa-ellipsis-v"></i>
@@ -70,7 +70,7 @@
             </section>
 
             <!--MAIN CONTENT-->
-            <div v-if="utenteSelezionato != null" class="messaggini">
+            <div v-if="utenteSelezionato != null" class="mini">
             <section class="content-main" v-for="(item, index) in utenteSelezionato.messages" >
                 
                 <!--SEND MESSAGE-->
