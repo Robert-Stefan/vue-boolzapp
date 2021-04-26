@@ -17,8 +17,8 @@
 </head>
 <body>
     
-    <div id="app" class="container">
-        <aside class="side">
+    <div id="app" class="container" >
+        <aside class="side" >
 
             <!--HEADER USER-->
             <div class="header-user">
@@ -30,7 +30,7 @@
             </div>
 
             <!--NOTIFICATION BAR-->
-            <div class="notification-bar">
+            <div class="notification-bar" >
                 <div class="notify">
                 <i class="fas fa-bell-slash"></i>
                 </div>
@@ -41,7 +41,7 @@
             </div>
 
             <!--SEARCH INPUT WITH VUEJS-->
-            <div class="search-bar">
+            <div class="search-bar" >
                 <button type="submit"><i class="fa fa-search"></i></button>
                 <input type="text" v-model="search" placeholder="Cerca o inizia una nuova chat">
             </div>
@@ -70,11 +70,11 @@
             </section>
 
             <!--MAIN CONTENT-->
-            <div v-if="utenteSelezionato != null" >
+            <div v-if="utenteSelezionato != null" class="messaggini">
             <section class="content-main" v-for="(item, index) in utenteSelezionato.messages" >
                 
                 <!--SEND MESSAGE-->
-                <div class="send" v-if = "item.status === 'sent' ">
+                <div class="send" v-if = "item.status === 'sent'">
                     <span>{{ item.message }}</span>
                     <span>10/01/2021 15:50:00</span>
                 </div>
@@ -88,7 +88,7 @@
             </div>
 
             <!--FOOTER CONTENT-->
-            <section class="content-footer">
+            <section class="content-footer" >
                 <i class="far fa-smile"></i>
                 <input class="chat" type="text" placeholder="Scrivi un messaggio">
                 <i class="fas fa-microphone"></i>

@@ -232,6 +232,10 @@ body {
 }
 
 /*MAIN OF CONTENT*/
+.content .messaggini {
+    flex-grow: 1;
+}
+
 /*SEND MESSAGE*/
 .content-main .send {
     background-color: #ddfabf;
