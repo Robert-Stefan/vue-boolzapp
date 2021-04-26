@@ -4,6 +4,7 @@ const app = new Vue({
     data: {
 search: '',
 utenteSelezionato: null,
+privateMessage: '',
 listechat: [
     {
         name: 'Michele',
@@ -108,6 +109,16 @@ methods: {
         console.log(index);
         this.utenteSelezionato = this.listechat[index];
         console.log(this.utenteSelezionato);
-    }
+    },
+    addMessage() {
+        if(this.privateMessage.trim() !== '') {
+            this.listechat.push({
+                message: this.privateMessage,
+                status: 'sent',
+                });
+                this.privateMessage = '';
+                this.$refs.messageInput.focus();
+            }
+        },
 }
 });
