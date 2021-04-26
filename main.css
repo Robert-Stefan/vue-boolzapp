@@ -190,6 +190,10 @@ body {
     flex-wrap: wrap;
 }
 
+.side .list-chat li:hover {
+    background-color: #f6f6f6;
+}
+
 /*HEADER OF CONTENT*/
 .content-header {
     padding: 10px 10px;
