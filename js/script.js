@@ -91,7 +91,7 @@ listechat: [
 },
 
 //Funzione cerca per la chat 
-computed:
+methods:
 {
     filtraLista:function()
     {
