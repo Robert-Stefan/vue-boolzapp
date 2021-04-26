@@ -40,16 +40,16 @@
                 </div>
             </div>
 
-            <!--SEARCH INPUT-->
+            <!--SEARCH INPUT WITH VUEJS-->
             <div class="search-bar">
                 <button type="submit"><i class="fa fa-search"></i></button>
-                <input type="text" placeholder="Cerca o inizia una nuova chat">
+                <input type="text" v-model="search" placeholder="Cerca o inizia una nuova chat">
             </div>
             
             <!--LIST CHAT WITH VUEJS-->
             <div class="list-chat">
                 <ul>
-                    <li v-for="utenti in listechat">
+                    <li v-for="utenti in filtraLista">
                         <img :src="'./img/avatar'+utenti.avatar+'.jpg'" alt="avatar_user">
                         <span>{{ utenti.name }}</span>
                         <hr style=" border: 1px solid #f6f6f6;">

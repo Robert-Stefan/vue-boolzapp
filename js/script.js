@@ -2,6 +2,7 @@
 const app = new Vue({
     el:'#app',
     data: {
+search: '',
 listechat: [
     {
         name: 'Michele',
@@ -88,4 +89,16 @@ listechat: [
     },
 ],
 },
+
+//Funzione cerca per la chat 
+computed:
+{
+    filtraLista:function()
+    {
+        var self=this;
+        return this.listechat.filter( function(cust) {
+            return cust.name.toLowerCase().indexOf(self.search.toLowerCase())>=0;
+        });
+    }
+}
 });
