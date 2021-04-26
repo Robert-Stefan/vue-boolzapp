@@ -49,9 +49,9 @@
             <!--LIST CHAT WITH VUEJS-->
             <div class="list-chat">
                 <ul>
-                    <li v-for="utenti in filtraLista" @click= "selezioneUtente(utente)">
-                        <img :src="'./img/avatar'+utenti.avatar+'.jpg'" alt="avatar_user">
-                        <span>{{ utenti.name }}</span>
+                    <li v-for="(utente, index) in filtraLista" @click= "selezioneUtente(index)">
+                        <img :src="'./img/avatar'+utente.avatar+'.jpg'" alt="avatar_user">
+                        <span>{{ utente.name }}</span>
                         <hr style=" border: 1px solid #f6f6f6;">
                     </li>
                 </ul>
@@ -70,20 +70,22 @@
             </section>
 
             <!--MAIN CONTENT-->
-            <section class="content-main" v-for="" >
+            <div v-if="utenteSelezionato != null" >
+            <section class="content-main" v-for="(item, index) in utenteSelezionato.messages" >
                 
                 <!--SEND MESSAGE-->
-                <div class="send" v-if = "">
-                    <span>{{  }}</span>
+                <div class="send" v-if = "item.status === 'sent' ">
+                    <span>{{ item.message }}</span>
                     <span>10/01/2021 15:50:00</span>
                 </div>
 
                 <!--RECEIVE MESSAGE-->
-                <div class="receive" v-if="">
-                    <span>Messaggio ricevuto</span>
+                <div class="receive" v-if="item.status === 'received' ">
+                    <span>{{ item.message }}</span>
                     <span>10/01/2021 15:50:00</span>
                 </div>
             </section>
+            </div>
 
             <!--FOOTER CONTENT-->
             <section class="content-footer">

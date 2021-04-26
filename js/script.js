@@ -103,9 +103,11 @@ computed:
     }
 },
 
-method: {
-    selezioneUtente(utente) {
-        this.utenteSelezionato = utenti.messages;
+methods: {
+    selezioneUtente(index) {
+        console.log(index);
+        this.utenteSelezionato = this.listechat[index];
+        console.log(this.utenteSelezionato);
     }
 }
 });
