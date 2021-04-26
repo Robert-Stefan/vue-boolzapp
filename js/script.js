@@ -3,6 +3,7 @@ const app = new Vue({
     el:'#app',
     data: {
 search: '',
+utenteSelezionato: null,
 listechat: [
     {
         name: 'Michele',
@@ -99,6 +100,12 @@ computed:
         return this.listechat.filter( function(cust) {
             return cust.name.toLowerCase().indexOf(self.search.toLowerCase())>=0;
         });
+    }
+},
+
+method: {
+    selezioneUtente(utente) {
+        this.utenteSelezionato = utenti.messages;
     }
 }
 });

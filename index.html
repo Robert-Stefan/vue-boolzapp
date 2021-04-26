@@ -49,7 +49,7 @@
             <!--LIST CHAT WITH VUEJS-->
             <div class="list-chat">
                 <ul>
-                    <li v-for="utenti in filtraLista">
+                    <li v-for="utenti in filtraLista" @click= "selezioneUtente(utente)">
                         <img :src="'./img/avatar'+utenti.avatar+'.jpg'" alt="avatar_user">
                         <span>{{ utenti.name }}</span>
                         <hr style=" border: 1px solid #f6f6f6;">
@@ -70,16 +70,16 @@
             </section>
 
             <!--MAIN CONTENT-->
-            <section class="content-main">
+            <section class="content-main" v-for="" >
                 
                 <!--SEND MESSAGE-->
-                <div class="send">
-                    <span>Messaggio inviato</span>
+                <div class="send" v-if = "">
+                    <span>{{  }}</span>
                     <span>10/01/2021 15:50:00</span>
                 </div>
 
                 <!--RECEIVE MESSAGE-->
-                <div class="receive">
+                <div class="receive" v-if="">
                     <span>Messaggio ricevuto</span>
                     <span>10/01/2021 15:50:00</span>
                 </div>
