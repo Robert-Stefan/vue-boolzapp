@@ -30,6 +30,7 @@ body {
 
 .side {
     flex-basis: 35%;
+    overflow-y: auto;
 }
 
 .content {
@@ -63,6 +64,7 @@ body {
 .header-user {
     padding: 10px 10px;
     background: #ededed;
+    position: sticky;
 }
 
 .side .header-user > img {
@@ -73,7 +75,7 @@ body {
 
 .side .header-user > span {
     position: absolute;
-    top: 40px;
+    top: 20px;
     font-weight: bold;
     padding: 7px 5px;
 }
