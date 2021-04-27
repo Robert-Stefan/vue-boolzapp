@@ -187,7 +187,6 @@ body {
 .side .list-chat li {
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
 }
 
 .side .list-chat li:hover {
