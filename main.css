@@ -39,6 +39,7 @@ body {
     display: flex;
     flex-direction: column;
     border-left: 1px solid #dadada;
+    overflow-y: auto;
 }
 
 .content-header {
@@ -198,6 +199,7 @@ body {
 .content-header {
     padding: 10px 10px;
     background: #ededed;
+    position: sticky;
 }
 
 .content .content-header > img {
@@ -208,7 +210,6 @@ body {
 
 .content-header .username {
     position: absolute;
-    top: 35px;
     font-weight: bold;
     padding: 7px 5px;
     cursor: pointer;
@@ -216,7 +217,7 @@ body {
 
 .content-header .lastentry {
     position: absolute;
-    top: 54px;
+    top: 35px;
     padding: 7px 5px;
     font-size: 13px;
     color: #808080;
@@ -234,7 +235,6 @@ body {
 /*MAIN OF CONTENT*/
 .content .messaggini {
     flex-grow: 1;
-    overflow-y: auto;
     display: flex;
     flex-direction: column;
 }
