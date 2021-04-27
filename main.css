@@ -234,6 +234,7 @@ body {
 /*MAIN OF CONTENT*/
 .content .messaggini {
     flex-grow: 1;
+    overflow-y: auto;
 }
 
 /*SEND MESSAGE*/
