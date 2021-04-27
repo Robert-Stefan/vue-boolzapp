@@ -61,7 +61,7 @@
 
             <!--HEADER CONTENT-->
             <div v-if="utenteSelezionato != null" class="messaggini" >
-            <section class="content-header" v-model="(item, index) in utenteSelezionato">
+            <section class="content-header" @click="(item, index) in utenteSelezionato">
                 <img :src="'./img/avatar'+utenteSelezionato.avatar+'.jpg'" alt="user">
                 <span class="username">{{ utenteSelezionato.name }}</span>
                 <span class="lastentry">Ultimo accesso oggi alle 10.35</span>
@@ -86,7 +86,7 @@
                     <span>{{item.date}}</span>
                 </div>
             </section>
-            </div>
+            
 
             <!--FOOTER CONTENT-->
             <section class="content-footer" >
@@ -94,8 +94,10 @@
                 <input @keyup.enter= "addMessage" v-model="privateMessage" class="chat" type="text" placeholder="Scrivi un messaggio">
                 <i class="fas fa-microphone"></i>
             </section>
+        
         </main>    
     </div>
+</div>
 
     <!--JS-->
     <script src="js/script.js"></script>
