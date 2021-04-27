@@ -120,6 +120,7 @@ methods: {
             this.utenteSelezionato.messages.push({
                 message: this.privateMessage,
                 status: 'sent',
+                date: dayjs().format('DD/MM/YYYY HH:mm:ss')
                 });
 
                 this.privateMessage = '';
@@ -127,7 +128,8 @@ methods: {
             setTimeout((addMessage) => {
                 this.utenteSelezionato.messages.push({
                     message: this.botMessage,
-                    status: 'received'
+                    status: 'received',
+                    date: dayjs().format('DD/MM/YYYY HH:mm:ss')
                 })
             }, 1000)}
         }
