@@ -93,7 +93,7 @@ listechat: [
 ],
 },
 
-//Funzione cerca per la chat 
+//Funzione "cerca" per la chat 
 computed:
 {
     filtraLista:function()
@@ -130,6 +130,6 @@ methods: {
                     status: 'received'
                 })
             }, 1000)}
-            }
-        },
+        }
+    },
 });
