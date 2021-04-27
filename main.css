@@ -47,13 +47,16 @@ body {
     padding: 20px;
 }
 
+.wrap-content-main {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
 .content-main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    flex-grow: 1;
     padding: 0 100px;
-    overflow-y: auto;
 }
 
 .content-main p {

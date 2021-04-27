@@ -71,8 +71,8 @@
             </section>
 
             <!--MAIN CONTENT-->
-            
-            <section class="content-main" v-for="(item, index) in utenteSelezionato.messages" >
+            <section class="wrap-content-main">
+            <div class="content-main" v-for="(item, index) in utenteSelezionato.messages" >
                 
                 <!--SEND MESSAGE-->
                 <div class="send" v-if = "item.status === 'sent'">
@@ -85,6 +85,7 @@
                     <span>{{ item.message }}</span>
                     <span>{{item.date}}</span>
                 </div>
+            </div>
             </section>
             
 
