@@ -5,6 +5,7 @@ const app = new Vue({
 search: '',
 utenteSelezionato: null,
 privateMessage: '',
+botMessage: "Ok!",
 listechat: [
     {
         name: 'Michele',
@@ -105,20 +106,30 @@ computed:
 },
 
 methods: {
+
+    //Visualizzo i messaggi chat
     selezioneUtente(index) {
         console.log(index);
         this.utenteSelezionato = this.listechat[index];
         console.log(this.utenteSelezionato);
     },
+
+    //Aggiungo messaggio e ricevo risposta
     addMessage() {
         if(this.privateMessage.trim() !== '') {
-            this.listechat.push({
+            this.utenteSelezionato.messages.push({
                 message: this.privateMessage,
                 status: 'sent',
                 });
+
                 this.privateMessage = '';
-                this.$refs.messageInput.focus();
+
+            setTimeout((addMessage) => {
+                this.utenteSelezionato.messages.push({
+                    message: this.botMessage,
+                    status: 'received'
+                })
+            }, 1000)}
             }
         },
-}
 });

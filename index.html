@@ -70,7 +70,7 @@
             </section>
 
             <!--MAIN CONTENT-->
-            <div v-if="utenteSelezionato != null" class="messaggini" v-model="privateMessage" @keyup.enter="addMessage" ref="messageInput"  >
+            <div v-if="utenteSelezionato != null" class="messaggini" >
             <section class="content-main" v-for="(item, index) in utenteSelezionato.messages" >
                 
                 <!--SEND MESSAGE-->
@@ -90,7 +90,7 @@
             <!--FOOTER CONTENT-->
             <section class="content-footer" >
                 <i class="far fa-smile"></i>
-                <input @keyup.enter= "addMessage" class="chat" type="text" placeholder="Scrivi un messaggio">
+                <input @keyup.enter= "addMessage" v-model="privateMessage" class="chat" type="text" placeholder="Scrivi un messaggio">
                 <i class="fas fa-microphone"></i>
             </section>
         </main>    
